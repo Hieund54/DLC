@@ -1,0 +1,395 @@
+.page {
+  min-height: calc(100vh - 56px);
+  padding: 24px 24px 104px;
+  background: #f4f5f8;
+}
+
+.pageHeader {
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  align-items: center;
+  color: #64748b;
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.breadcrumbLink {
+  color: #0075c0;
+  cursor: pointer;
+}
+
+.breadcrumbLink:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  color: #1e3f7a;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.modeTabs {
+  background: #fff;
+  border: 1px solid #dbe4ef;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 4px;
+  margin-bottom: 18px;
+  padding: 4px;
+}
+
+.modeTab {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: #475569;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 6px;
+  min-height: 34px;
+  padding: 0 14px;
+}
+
+.modeTabActive {
+  background: #e8f4ff;
+  color: #0075c0;
+}
+
+.formBody {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+  margin-bottom: 20px;
+}
+
+.leftPanel,
+.rightPanel {
+  height: 100%;
+}
+
+.section {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px;
+}
+
+.sectionTitle {
+  align-items: center;
+  border-bottom: 1px solid #f0f2f5;
+  color: #1e3f7a;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+}
+
+.fieldRow {
+  margin-bottom: 14px;
+}
+
+.directGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.label {
+  color: #374151;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.input {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #374151;
+  font-size: 13px;
+  height: 36px;
+  outline: none;
+  padding: 0 10px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #0075c0;
+  box-shadow: 0 0 0 2px rgba(0, 117, 192, 0.14);
+}
+
+.textarea {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #374151;
+  font-size: 13px;
+  outline: none;
+  padding: 8px 10px;
+  resize: vertical;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+}
+
+.textarea:focus {
+  border-color: #0075c0;
+  box-shadow: 0 0 0 2px rgba(0, 117, 192, 0.14);
+}
+
+.summaryBox {
+  background: #f8fafc;
+  border: 1px solid #dbe4ef;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 14px 16px;
+}
+
+.summaryRow {
+  color: #475569;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.summaryTotal {
+  border-top: 1px solid #dbe4ef;
+  margin-top: 6px;
+  padding-top: 8px;
+}
+
+.totalAmount {
+  color: #0075c0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.linesSection {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  margin-bottom: 20px;
+  overflow: visible;
+  padding: 0;
+}
+
+.linesSectionHeader {
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.linesTable {
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 1080px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.linesTable thead tr {
+  background: #f4f5f8;
+}
+
+.linesTable th {
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  color: #555;
+  font-weight: 600;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.linesTable th:last-child,
+.linesTable td:last-child {
+  border-right: none;
+}
+
+.linesTable td {
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  color: #333;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+
+.linesTable tbody tr:hover {
+  background: #fcfcfc;
+}
+
+.linesTable tfoot td {
+  background: #fafbfc;
+  border-bottom: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.lineInput {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #374151;
+  font-size: 13px;
+  height: 32px;
+  outline: none;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.lineInput:focus,
+.lineTextarea:focus {
+  border-color: #0075c0;
+  box-shadow: 0 0 0 2px rgba(0, 117, 192, 0.12);
+}
+
+.lineTextarea {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #374151;
+  font-size: 13px;
+  max-height: 88px;
+  min-height: 32px;
+  outline: none;
+  padding: 7px 8px;
+  resize: vertical;
+  width: 100%;
+}
+
+.btnAddLine {
+  align-items: center;
+  background: #f1f8fe;
+  border: 1px solid #b8dcff;
+  border-radius: 4px;
+  color: #0075c0;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  gap: 6px;
+  padding: 6px 14px;
+}
+
+.btnAddLine:hover {
+  background: #e6f4ff;
+}
+
+.btnRemoveLine {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 4px;
+}
+
+.btnRemoveLine:hover {
+  background: #fef2f2;
+}
+
+.footerActions {
+  align-items: center;
+  background: var(--color-primary-sidebar);
+  border-top: 1px solid var(--color-primary-sidebar-hover);
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.18);
+  display: flex;
+  height: 58px;
+  justify-content: space-between;
+  left: var(--sidebar-width, 248px);
+  padding: 0 24px;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.btnSecondary,
+.btnOutline,
+.btnPrimary {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  gap: 6px;
+  min-height: 36px;
+  padding: 8px 18px;
+}
+
+.btnSecondary {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.btnSecondary:hover {
+  background: #f8fafc;
+}
+
+.btnOutline {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #0075c0;
+}
+
+.btnOutline:hover {
+  background: #f1f8fe;
+}
+
+.btnPrimary {
+  background: #0075c0;
+  border: 1px solid #0075c0;
+  color: #fff;
+}
+
+.btnPrimary:hover {
+  background: #005f9e;
+}
+
+.btnPrimary:disabled,
+.btnOutline:disabled,
+.btnSecondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .formBody {
+    grid-template-columns: 1fr;
+  }
+
+  .directGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .footerActions {
+    left: 0;
+    padding: 0 16px;
+  }
+}

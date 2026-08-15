@@ -1,0 +1,78 @@
+import axiosClient from './axiosClient';
+
+// ─── cấu hình APIs ────────────────────────────────────────────────────────────────
+
+export const getAssemblyBoms = (params = {}) => {
+    return axiosClient.get('/assembly-boms', { params });
+};
+
+export const getAssemblyBomById = (id) => {
+    return axiosClient.get(`/assembly-boms/${id}`);
+};
+
+export const createAssemblyBom = (data) => {
+    return axiosClient.post('/assembly-boms', data);
+};
+
+export const updateAssemblyBom = (id, data) => {
+    return axiosClient.put(`/assembly-boms/${id}`, data);
+};
+
+// ─── Assembly Order APIs ──────────────────────────────────────────────────────
+
+export const getAssemblyOrders = (params = {}) => {
+    return axiosClient.get('/assembly-orders', { params });
+};
+
+export const getAssemblyOrderById = (id) => {
+    return axiosClient.get(`/assembly-orders/${id}`);
+};
+
+export const createAssemblyOrder = (data) => {
+    return axiosClient.post('/assembly-orders', data);
+};
+
+export const createDisassemblyOrder = (data) => {
+    return axiosClient.post('/disassembly-orders', data);
+};
+
+export const updateAssemblyOrder = (id, data) => {
+    return axiosClient.put(`/assembly-orders/${id}`, data);
+};
+
+export const updateAssemblyOrderNote = (id, note) => {
+    return axiosClient.patch(`/assembly-orders/${id}/note`, { note });
+};
+
+/**
+ * Cập nhật trạng thái lệnh (Duyệt / Hủy…)
+ * PUT /api/v1/assembly-orders/{id}/status?status=APPROVED
+ */
+export const updateOrderStatus = (id, status) => {
+    return axiosClient.put(`/assembly-orders/${id}/status`, null, { params: { status } });
+};
+
+/**
+ * Sinh Phiếu Nhập / Xuất kho từ Lệnh đã APPROVED
+ * POST /api/v1/assembly-orders/{id}/inventory-documents
+ * body: { documentType: "GOODS_ISSUE" | "GOODS_RECEIPT", lines: [...] }
+ */
+export const generateInventoryDocument = (id, data) => {
+    return axiosClient.post(`/assembly-orders/${id}/inventory-documents`, data);
+};
+
+export const getAssemblyOrderSerials = (id) => {
+    return axiosClient.get(`/assembly-orders/${id}/serials`);
+};
+
+export const saveAssemblyOrderSerials = (id, requests) => {
+    return axiosClient.post(`/assembly-orders/${id}/serials`, requests);
+};
+
+export const getAssemblySerialTreeByTarget = (params = {}) => {
+    return axiosClient.get('/assembly-serial-tree', { params });
+};
+
+export const executeAssemblyOrder = (id, request) => {
+    return axiosClient.post(`/assembly-orders/${id}/execute`, request);
+};

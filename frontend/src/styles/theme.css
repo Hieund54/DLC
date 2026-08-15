@@ -1,0 +1,264 @@
+:root {
+  --page-bg: var(--color-bg);
+  --page-bg-soft: var(--color-bg-soft);
+  --surface-bg: var(--color-surface);
+  --header-bg: var(--color-surface);
+  --sidebar-bg: var(--color-secondary);
+  --sidebar-hover-bg: var(--color-secondary-hover);
+
+  --brand-gradient: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-accent) 100%);
+  --auth-gradient: linear-gradient(145deg, var(--color-auth-start) 0%, var(--color-auth-middle) 50%, var(--color-primary) 100%);
+
+  --table-header-bg: var(--color-bg-soft);
+  --table-hover-bg: var(--color-primary-soft);
+  --table-border: var(--color-border);
+
+  --form-border: var(--color-border-strong);
+  --form-focus-border: var(--color-primary);
+  --form-label-color: var(--color-text-muted);
+
+  --button-primary-bg: var(--color-primary);
+  --button-primary-hover-bg: var(--color-primary-hover);
+  --button-outline-bg: var(--color-surface);
+  --button-outline-hover-bg: var(--color-bg);
+
+  --status-success-bg: var(--color-success-bg);
+  --status-success-text: var(--color-success);
+  --status-success-border: var(--color-success-border);
+  --status-warning-bg: var(--color-warning-bg);
+  --status-warning-text: var(--color-warning);
+  --status-warning-border: var(--color-warning-border);
+  --status-danger-bg: var(--color-danger-bg);
+  --status-danger-text: var(--color-danger-text);
+  --status-danger-border: var(--color-danger-border);
+  --status-info-bg: var(--color-primary-soft);
+  --status-info-text: var(--color-primary);
+  --status-info-border: var(--color-info-border);
+
+  --overlay-dark: rgba(0, 0, 0, 0.4);
+  --overlay-modal: rgba(0, 0, 0, 0.55);
+  --overlay-white-line: rgba(255, 255, 255, 0.1);
+  --overlay-white-line-strong: rgba(255, 255, 255, 0.2);
+  --overlay-white-muted: rgba(255, 255, 255, 0.7);
+  --overlay-white-soft-text: rgba(255, 255, 255, 0.8);
+  --overlay-white-hover: rgba(255, 255, 255, 0.1);
+  --overlay-white-active: rgba(255, 255, 255, 0.15);
+
+  --auth-spotlight: rgba(255, 255, 255, 0.055);
+  --auth-spotlight-soft: rgba(255, 255, 255, 0.05);
+  --auth-spotlight-accent: rgba(99, 179, 237, 0.08);
+  --auth-spotlight-warning: rgba(249, 115, 22, 0.08);
+  --auth-dot-grid: rgba(255, 255, 255, 0.04);
+  --auth-brand-bg: rgba(255, 255, 255, 0.13);
+  --auth-brand-bg-soft: rgba(255, 255, 255, 0.12);
+  --auth-brand-border: rgba(255, 255, 255, 0.22);
+  --auth-muted-text: rgba(255, 255, 255, 0.48);
+  --auth-muted-text-soft: rgba(255, 255, 255, 0.5);
+  --auth-footer-text: rgba(255, 255, 255, 0.3);
+  --auth-footer-text-strong: rgba(255, 255, 255, 0.35);
+  --auth-spinner-border: rgba(255, 255, 255, 0.3);
+  --dashboard-grid-line: rgba(14, 143, 220, 0.05);
+  --dashboard-action-bg: rgba(255, 255, 255, 0.86);
+
+  --shadow-card: 0 16px 36px rgba(15, 23, 42, 0.08);
+  --shadow-card-soft: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card-subtle: 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-panel: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-dropdown: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-dropdown-strong: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --shadow-modal: 0 8px 40px rgba(0, 0, 0, 0.22), 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-toast: 0 8px 32px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-table: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-auth-card: 0 32px 80px rgba(0, 0, 0, 0.32), 0 4px 20px rgba(0, 0, 0, 0.14);
+  --shadow-auth-card-soft: 0 24px 64px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-auth-brand: 0 4px 16px rgba(0, 0, 0, 0.18);
+  --shadow-primary: 0 4px 16px rgba(30, 63, 122, 0.32);
+  --shadow-primary-soft: 0 1px 2px 0 rgba(30, 63, 122, 0.3);
+  --shadow-primary-raised: 0 4px 6px -1px rgba(30, 63, 122, 0.3), 0 2px 4px -1px rgba(30, 63, 122, 0.2);
+  --shadow-blue: 0 10px 20px rgba(14, 143, 220, 0.22);
+  --shadow-blue-raised: 0 14px 28px rgba(37, 99, 235, 0.24);
+  --shadow-focus-primary: 0 0 0 2px rgba(0, 117, 192, 0.12);
+  --shadow-focus-blue: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  --shadow-focus-blue-strong: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  --shadow-focus-primary-soft: 0 0 0 3px rgba(30, 79, 160, 0.1);
+  --shadow-focus-danger: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  --shadow-focus-primary-wide: 0 0 0 4px rgba(30, 63, 122, 0.16);
+
+  --misa-primary: var(--color-primary);
+  --misa-sidebar-bg: var(--color-secondary);
+  --misa-sidebar-hover: var(--color-secondary-hover);
+  --misa-sidebar-active: var(--color-primary);
+  --misa-sidebar-text: var(--color-white);
+  --misa-body-bg: var(--color-bg);
+  --misa-text-color: var(--color-text);
+  --misa-border: var(--color-border);
+  --misa-header-height: 56px;
+  --misa-sidebar-width: 220px;
+}
+
+:root[data-theme='emerald'] {
+  --color-primary: #059669;
+  --color-primary-hover: #047857;
+  --color-primary-soft: #ecfdf5;
+  --color-primary-accent: #10b981;
+  --color-primary-dark: #065f46;
+  --color-primary-deep: #064e3b;
+  --color-primary-navy: #065f46;
+  --color-primary-sidebar: #047857;
+  --color-primary-sidebar-hover: #065f46;
+  --color-primary-bright: #10b981;
+  --color-primary-bright-hover: #059669;
+  --color-primary-link: #047857;
+  --color-primary-pale: #d1fae5;
+  --color-primary-tint: #ccfbf1;
+  --color-primary-tint-2: #d1fae5;
+  --color-info-bg: #ecfdf5;
+  --color-info-border: #a7f3d0;
+  --color-secondary: #164e43;
+  --color-secondary-hover: #0f3d35;
+}
+
+:root[data-theme='violet'] {
+  --color-primary: #b087f6;
+  --color-primary-hover: #9f70ee;
+  --color-primary-soft: #f8f5ff;
+  --color-primary-accent: #c4a5f9;
+  --color-primary-dark: #845ec2;
+  --color-primary-deep: #7047ab;
+  --color-primary-navy: #5c3491;
+  --color-primary-sidebar: #9f70ee;
+  --color-primary-sidebar-hover: #845ec2;
+  --color-primary-bright: #c4a5f9;
+  --color-primary-bright-hover: #b087f6;
+  --color-primary-link: #9f70ee;
+  --color-primary-pale: #ede9fe;
+  --color-primary-tint: #ede9fe;
+  --color-primary-tint-2: #f3e8ff;
+  --color-info-bg: #f5f3ff;
+  --color-info-border: #ddd6fe;
+  --color-secondary: #3b2a5f;
+  --color-secondary-hover: #2f214f;
+}
+
+:root[data-theme='pink'] {
+  --color-primary: #fb5fad;
+  --color-primary-hover: #ed4a9b;
+  --color-primary-soft: #fff5fa;
+  --color-primary-accent: #ff85c6;
+  --color-primary-dark: #d53183;
+  --color-primary-deep: #c12170;
+  --color-primary-navy: #9a1a59;
+  --color-primary-sidebar: #ed4a9b;
+  --color-primary-sidebar-hover: #d53183;
+  --color-primary-bright: #ff85c6;
+  --color-primary-bright-hover: #fb5fad;
+  --color-primary-link: #ed4a9b;
+  --color-primary-pale: #fbcfe8;
+  --color-primary-tint: #fbcfe8;
+  --color-primary-tint-2: #fce7f3;
+  --color-info-bg: #fdf2f8;
+  --color-info-border: #fbcfe8;
+  --color-secondary: #4a283c;
+  --color-secondary-hover: #3b1d2e;
+}
+
+:root[data-theme='dark'] {
+  /* ── Primary Palette: Indigo/Violet ── */
+  --color-primary: #818cf8;
+  --color-primary-hover: #6366f1;
+  --color-primary-soft: rgba(99, 102, 241, 0.12);
+  --color-primary-accent: #a78bfa;
+  --color-primary-dark: #4338ca;
+  --color-primary-deep: #3730a3;
+  --color-primary-navy: #4338ca;
+  --color-primary-sidebar: #0f1117;
+  --color-primary-sidebar-hover: #1a1d2e;
+  --color-primary-bright: #a5b4fc;
+  --color-primary-bright-hover: #818cf8;
+  --color-primary-link: #c7d2fe;
+  --color-primary-pale: rgba(99, 102, 241, 0.15);
+  --color-primary-tint: rgba(99, 102, 241, 0.1);
+  --color-primary-tint-2: rgba(139, 92, 246, 0.1);
+  --color-secondary: #0f1117;
+  --color-secondary-hover: #1a1d2e;
+
+  /* ── Semantic Colors ── */
+  --color-info: #818cf8;
+  --color-info-hover: #6366f1;
+  --color-info-bg: rgba(99, 102, 241, 0.12);
+  --color-info-border: rgba(99, 102, 241, 0.3);
+  --color-info-border-soft: rgba(99, 102, 241, 0.2);
+  --color-success: #34d399;
+  --color-success-strong: #6ee7b7;
+  --color-success-bg: rgba(16, 185, 129, 0.12);
+  --color-success-bg-soft: rgba(16, 185, 129, 0.08);
+  --color-success-border: rgba(16, 185, 129, 0.25);
+  --color-success-border-soft: rgba(16, 185, 129, 0.18);
+  --color-warning: #fbbf24;
+  --color-warning-bg: rgba(251, 191, 36, 0.12);
+  --color-warning-bg-soft: rgba(251, 191, 36, 0.08);
+  --color-warning-border: rgba(251, 191, 36, 0.25);
+  --color-danger: #f87171;
+  --color-danger-strong: #fca5a5;
+  --color-danger-text: #fca5a5;
+  --color-danger-bg: rgba(239, 68, 68, 0.12);
+  --color-danger-bg-soft: rgba(239, 68, 68, 0.08);
+  --color-danger-border: rgba(239, 68, 68, 0.25);
+  --color-danger-border-soft: rgba(239, 68, 68, 0.18);
+
+  /* ── Background & Surface ── */
+  --color-bg: #0f1117;
+  --color-bg-page-alt: #13151f;
+  --color-bg-soft: #13151f;
+  --color-bg-table: #1a1d2e;
+  --color-bg-hover: rgba(255, 255, 255, 0.04);
+  --color-bg-muted: #1a1d2e;
+  --color-bg-elevated: #13151f;
+  --color-bg-subtle: #0b0d14;
+  --color-bg-control-hover: #1a1d2e;
+  --color-bg-soft-blue: rgba(99, 102, 241, 0.08);
+  --color-surface: #14161f;
+  --color-surface-muted: #1a1d2e;
+
+  /* ── Text ── */
+  --color-text: #f1f5f9;
+  --color-text-2: #e2e8f0;
+  --color-text-strong: #f1f5f9;
+  --color-text-heading: #e2e8f0;
+  --color-text-body: #d1d5db;
+  --color-text-secondary: #b0b8c8;
+  --color-text-muted: #9ca3af;
+  --color-text-muted-2: #7c8594;
+  --color-text-muted-3: #7c8594;
+  --color-text-subtle: #5b6370;
+  --color-text-placeholder: #5b6370;
+  --color-text-disabled: #3f4650;
+  --color-icon-muted: #5b6370;
+
+  /* ── Borders ── */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+  --color-border-field: rgba(255, 255, 255, 0.12);
+  --color-border-soft: rgba(255, 255, 255, 0.05);
+  --color-border-card: rgba(255, 255, 255, 0.06);
+  --color-border-muted: rgba(255, 255, 255, 0.08);
+  --color-border-focus-soft: #818cf8;
+  --color-border-auth: rgba(255, 255, 255, 0.1);
+  --color-white: #ffffff;
+
+  /* ── Overlays ── */
+  --overlay-dark: rgba(0, 0, 0, 0.65);
+  --overlay-modal: rgba(0, 0, 0, 0.72);
+  --dashboard-grid-line: rgba(99, 102, 241, 0.05);
+  --dashboard-action-bg: rgba(15, 17, 23, 0.88);
+
+  /* ── Shadows ── */
+  --shadow-card: 0 16px 36px rgba(0, 0, 0, 0.35);
+  --shadow-card-soft: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --shadow-card-subtle: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-panel: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-dropdown: 0 18px 34px rgba(0, 0, 0, 0.45);
+  --shadow-dropdown-strong: 0 20px 38px rgba(0, 0, 0, 0.55);
+  --shadow-table: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-focus-primary: 0 0 0 2px rgba(99, 102, 241, 0.25);
+}

@@ -1,0 +1,218 @@
+/* ─── Operations Center Layout ──────────────────────────────────────────────── */
+.page {
+    min-height: 100vh;
+    background: var(--page-bg);
+    font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+    color: var(--color-text-heading);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────────── */
+.header {
+    height: 60px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-width: 0;
+}
+
+.brandName {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-right: 32px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 24px;
+}
+
+.navLink, .navLinkActive {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    position: relative;
+    padding: 0 4px;
+}
+
+.navLinkActive {
+    color: var(--color-primary);
+}
+
+.navLinkActive::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background: var(--color-surface-muted);
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 280px;
+    max-width: 34vw;
+    border: 1px solid var(--color-border);
+}
+
+.searchBar i {
+    color: var(--color-text-subtle);
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.searchBar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 13px;
+    width: 100%;
+    color: var(--color-text-strong);
+}
+
+.searchBar input::placeholder {
+    color: var(--color-text-subtle);
+}
+
+.bellBtn {
+    background: none;
+    border: none;
+    position: relative;
+    color: var(--color-text-muted);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.bellDot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-danger);
+    border: 2px solid var(--color-surface);
+    border-radius: 50%;
+}
+
+.userInfoContainer {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid var(--color-border);
+    padding-left: 20px;
+}
+
+/* ─── Main Content ───────────────────────────────────────────────────────────── */
+.main {
+    padding: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-width: 0;
+    flex: 1;
+    width: 100%;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    gap: 20px;
+}
+
+.pageTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 8px;
+}
+
+.pageSubtitle {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.tabsContainer {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--color-border);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tabsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.tabBtn {
+    background: none;
+    border: none;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.tabBtn:hover {
+    color: var(--color-primary);
+}
+
+.tabBtnActive {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    font-weight: 600;
+}
+
+.tabContent {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
